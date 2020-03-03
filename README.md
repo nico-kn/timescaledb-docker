@@ -3,7 +3,9 @@ Simply run timescaledb in a managed docker container with docker-compose.
 
 ## Setup
 
-Configure your version of timescaledb and the underlying PostgreSQL version by adapting `image: timescale/timescaledb:1.6.0-pg10` to `image: timescale/timescaledb:<timescale_version>-pg<postgres_major_version>` in the docker-compose file. Available versions are specified at [dockerhub](https://hub.docker.com/r/timescale/timescaledb/). For example, you can run the latest release based on PostgreSQL 11 by specifying `image: timescale/timescaledb:latest-pg11`.
+Configure your version of timescaledb and the underlying PostgreSQL version by adapting `image: timescale/timescaledb:1.6.0-pg10` to `image: timescale/timescaledb:<timescale_version>-pg<postgres_major_version>` in the docker-compose file. Available versions are specified at [dockerhub](https://hub.docker.com/r/timescale/timescaledb/). 
+
+For example, you can run the latest release based on PostgreSQL 11 by specifying `image: timescale/timescaledb:latest-pg11`.
 
 Start the container via `docker-compose up -d` from this directory and then connect to the psql cli and start by creating a first database.
 
